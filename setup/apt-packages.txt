@@ -1,11 +1,10 @@
 bat
 fd
 fish
-fzr
+fzf
 gettext
 git
 jq
-pkg
 python
 ripgrep
 termux-api
