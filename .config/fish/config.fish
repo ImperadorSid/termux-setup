@@ -7,6 +7,7 @@ set fish_greeting
 
 # Alias
 alias b  bat
+alias B  'g --git-dir ~/backup --work-tree ~'
 alias c  clear
 alias g  git
 alias ls lsd
@@ -18,4 +19,7 @@ alias t  tmux
 alias v  vim
 alias vf vifm
 alias y  yarn
+
+# Additional settings
+functions -e fish_right_prompt
 

@@ -1,0 +1,15 @@
+bat
+fd
+fish
+fzr
+gettext
+git
+jq
+pkg
+python
+ripgrep
+termux-api
+tmux
+vifm
+vim
+zip

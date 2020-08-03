@@ -1,11 +1,25 @@
 " Options
-
 set autochdir
+set autoindent
 set background=dark
+set backspace=indent,eol,start
+set cursorline
+set expandtab
+set hlsearch
+set ignorecase
+set incsearch
+set noswapfile
 set number
 set relativenumber
 set scrolloff=3
+set shiftwidth=2
+set smartcase
+set softtabstop=2
+set term=xterm-256color
 set termguicolors
+
+" Commands
+syntax on
 
 " Plugins
 packadd! dracula
