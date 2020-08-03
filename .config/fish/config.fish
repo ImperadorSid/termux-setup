@@ -27,5 +27,8 @@ alias ls lsd
 functions -e fish_right_prompt
 
 # Start tmux
-status is-login; or t new -As 'main'
+if not status is-login and not set -q TMUX
+  t new -As 'main'
+end
+
 
