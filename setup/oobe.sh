@@ -12,3 +12,5 @@ do
   $REPO
 done
 
+cargo install lsd
+

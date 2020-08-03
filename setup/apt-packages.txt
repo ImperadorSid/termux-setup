@@ -5,6 +5,7 @@ fzf
 gettext
 git
 jq
+nodejs-lts
 python
 ripgrep
 termux-api
