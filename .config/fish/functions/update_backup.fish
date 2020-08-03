@@ -8,7 +8,7 @@ function update_backup
     B add -u
     read -P 'Commit message> ' msg
     B commit -m $msg
-    B push
+    B push -q
   end
 
 end
