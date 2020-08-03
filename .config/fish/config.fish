@@ -26,3 +26,4 @@ alias ls lsd
 # Additional settings
 functions -e fish_right_prompt
 
+status is-login;; or t new -As 'main'
