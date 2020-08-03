@@ -1,0 +1,13 @@
+" Options
+
+set autochdir
+set background=dark
+set number
+set relativenumber
+set scrolloff=3
+set termguicolors
+
+" Plugins
+packadd! dracula
+colorscheme dracula
+
