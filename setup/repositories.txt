@@ -1,3 +1,0 @@
-dracula/vim $HOME/.vim/pack/plugins/opt/dracula
-jiangmiao/auto-pairs $HOME/.vim/pack/plugins/start/auto-pairs
-mhinz/vim-startify $HOME/.vim/pack/plugins/start/startify

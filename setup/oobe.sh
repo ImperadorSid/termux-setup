@@ -1,41 +1,47 @@
 #!/usr/bin/env bash
 
+show_step() {
+  tput setaf 4
+  printf "\n$@\n"
+  tput sgr0
+}
+
 clear
 
 # Updates
-printf 'Updating Termux packages...\n'
+show_step 'Updating Termux packages...'
 pkg upgrade -y
 
 # User packages
-printf '\nInstalling user packages...\n'
+show_step 'Installing user packages...'
 pkg install -y $(cat apt-packages.txt)
 
 # Node.js
-printf '\nInstalling Node.js packages...\n'
+show_step 'Installing Node.js packages...'
 npm install -g yarn
 yarn global add $(cat node-packages.txt)
 
 # Python
-printf '\nUpgrading pip and installing Python packages...\n'
+show_step 'Upgrading pip and installing Python packages...'
 pip install --upgrade pip
 pip install $(cat python-packages.txt)
 
 # Rust
-printf '\nInstalling Rust crates...\n'
-cargo install $(cat rust-packages.txt)
+show_step 'Installing Rust crates...'
+cargo install $(cat rust-crates.txt)
 
 # Fish
-printf '\nConfigurating fish shell...\n'
+show_step 'Configurating fish shell...'
 chsh -s fish
 ./fish-variables.fish
 fish <(curl -sL https://get.oh-my.fish) --noninteractive
 
 # Vim plugins
-printf '\nCloning vim plugin repositories...\n'
+show_step 'Cloning vim plugins...'
 while read REPO
 do
-  CLONE_CMD=$(echo $REPO | awk '{print "git clone -q https://github.com/"$1" "$2}')
+  CLONE_CMD=$(echo $REPO | awk "{print \"git clone https://github.com/\"\$1\" $HOME/.vim/pack/\"\$2}")
   $CLONE_CMD
-done < repositories.txt
+done < vim-plugins.txt
 
-printf '\nDONE\n'
+show_step 'DONE'
