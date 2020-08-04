@@ -5,6 +5,7 @@
 .cache*/
 .cargo
 .git/
+.npm
 .thumbnails/
 .vim/pack/
 data/
