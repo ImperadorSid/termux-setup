@@ -1,5 +1,6 @@
 !.cargo/bin
 !.yarn/bin
+!storage/shared/
 *backup*/
 *yarn/
 .cache*/
@@ -8,15 +9,20 @@
 .npm
 .thumbnails/
 .vim/pack/
-data/
 DCIM/
+<<<<<<< HEAD
 generated_completions/
+=======
+>>>>>>> 76cd7ecb30fcd55bbd7be67088f8be0626ce8069
 Instagram/
-obb/
-omf/
 PicsArt/
 storage/
 !storage/shared/
 Screenshots/
 Telegram/
 WhatsApp/
+data/
+generated_completions/
+obb/
+omf/
+storage/*
