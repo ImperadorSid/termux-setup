@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 show_step() {
-  tput setaf 4
+  # tput setaf 4
   printf "\n$@\n"
-  tput sgr0
+  # tput sgr0
 }
 
 clear
