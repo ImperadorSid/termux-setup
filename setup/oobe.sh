@@ -2,7 +2,7 @@
 
 show_step() {
   # tput setaf 4
-  printf "\n$@\n"
+  printf "\n\n$@\n"
   # tput sgr0
 }
 
