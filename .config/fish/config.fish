@@ -11,6 +11,7 @@ alias B  'g --git-dir ~/backup --work-tree ~'
 alias c  clear
 alias g  git
 alias m  man
+alias n  node
 alias rs cargo
 alias s  ssh
 alias t  tmux

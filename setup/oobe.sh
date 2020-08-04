@@ -7,6 +7,14 @@ pkg upgrade
 # User packages
 pkg install $(cat apt-packages.txt)
 
+
+# Node.js
+npm install -g yarn
+yarn globall add $(cat node-packages.txt)
+
+# Rust
+cargo install $(cat rust-packages.txt)
+
 # Fish
 ./fish-variables.fish
 fish <(curl -sL https://get.oh-my.fish) --noninteractive
@@ -17,6 +25,4 @@ do
   $REPO
 done
 
-# Rust
-cargo install lsd
 
