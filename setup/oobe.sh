@@ -30,6 +30,12 @@ pip install $(cat python-packages.txt)
 show_step 'Installing Rust crates...'
 cargo install $(cat rust-crates.txt)
 
+# Git
+show_step 'Configuring backup repository...'
+BKP_CLI=git --git-dir=~/backup --work-tree=~
+$BKP_CLI config status.showUntrackedFiles no
+$BKP_CLI branch -u origin master
+
 # Fish
 show_step 'Configurating fish shell...'
 chsh -s fish
