@@ -32,7 +32,7 @@ cargo install $(cat rust-crates.txt)
 
 # Git
 show_step 'Configuring backup repository...'
-BKP_CLI=git --git-dir=~/backup --work-tree=~
+BKP_CLI="git --git-dir $HOME/backup --work-tree $HOME"
 $BKP_CLI config status.showUntrackedFiles no
 $BKP_CLI branch -u origin master
 
