@@ -8,6 +8,7 @@ jq
 nodejs-lts
 python
 ripgrep
+rust
 termux-api
 tmux
 vifm

@@ -1,0 +1,7 @@
+@angular/cli
+all-the-package-names
+nodemon
+sass
+small-static-server
+typescript
+
