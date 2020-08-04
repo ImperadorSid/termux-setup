@@ -6,6 +6,7 @@ gettext
 git
 jq
 nodejs-lts
+openssh
 python
 ripgrep
 rust
