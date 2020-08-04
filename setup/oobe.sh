@@ -34,7 +34,7 @@ cargo install $(cat rust-crates.txt)
 show_step 'Configuring backup repository...'
 BKP_CLI="git --git-dir $HOME/backup --work-tree $HOME"
 $BKP_CLI config status.showUntrackedFiles no
-$BKP_CLI branch -u origin master
+$BKP_CLI push -u origin master
 
 # Fish
 show_step 'Configurating fish shell...'
