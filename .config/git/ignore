@@ -1,10 +1,9 @@
 !.cargo/bin
-!.yarn/bin
 !storage/shared/
 *backup*/
 *yarn/
 .cache*/
-.cargo
+.cargo/
 .git/
 .npm
 .thumbnails/
