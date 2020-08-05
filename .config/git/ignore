@@ -9,20 +9,14 @@
 .npm
 .thumbnails/
 .vim/pack/
-DCIM/
-<<<<<<< HEAD
-generated_completions/
-=======
->>>>>>> 76cd7ecb30fcd55bbd7be67088f8be0626ce8069
-Instagram/
-PicsArt/
-storage/
-!storage/shared/
-Screenshots/
-Telegram/
-WhatsApp/
 data/
+DCIM/
 generated_completions/
+Instagram/
 obb/
 omf/
+PicsArt/
+Screenshots/
 storage/*
+Telegram/
+WhatsApp/
