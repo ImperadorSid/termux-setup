@@ -1,5 +1,3 @@
-!.cargo/bin
-!storage/shared/
 *backup*/
 *yarn/
 .cache*/
@@ -17,6 +15,7 @@ obb/
 omf/
 PicsArt/
 Screenshots/
-storage/*
+storage/*/
+!storage/shared/
 Telegram/
 WhatsApp/
