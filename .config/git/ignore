@@ -12,6 +12,7 @@ data/
 DCIM/
 generated_completions/
 Instagram/
+node_modules/
 obb/
 omf/
 PicsArt/
